@@ -57,8 +57,8 @@ t_figure			*save_tetr(const char *str, int name)
 		tmp->y[i] = xy->y[i];
 		i++;
 	}
-	tmp->width = (-1) * (0 - ft_max(tmp->x, 4));
-	tmp->height = (-1) * (0 - ft_max(tmp->y, 4));
+	tmp->width = ft_max(tmp->x, 4);
+	tmp->height = ft_max(tmp->y, 4);
 	tmp->name = name + 65;
 	return (tmp);
 }
