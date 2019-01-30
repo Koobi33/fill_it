@@ -58,10 +58,10 @@ int				solving(t_figure **tetrim, t_map *map, int abc, int k)
 	int j;
 
 	i = 0;
-	while (i + tetrim[abc]->height <= map->size + 2)
+	while (i + tetrim[abc]->height < map->size)
 	{
 		j = 0;
-		while (j + tetrim[abc]->width <= map->size + 2)
+		while (j + tetrim[abc]->width < map->size)
 		{
 			if (!check_place(i, j, &map, tetrim[abc]))
 			{
